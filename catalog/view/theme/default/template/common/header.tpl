@@ -18,6 +18,9 @@
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
 <?php } ?>
 <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <!-- include scripts and css for plugin d_social_login-->
+  <script src="catalog/view/javascript/d_social_login/spin.min.js"></script>
+  <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/d_social_login/styles.css" />
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -42,6 +45,8 @@
   <div class="container">
     <?php echo $currency; ?>
     <?php echo $language; ?>
+    <!-- display d_social login -->
+    <?php echo $d_social_login; ?>
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
         <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>

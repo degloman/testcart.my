@@ -1,6 +1,10 @@
 
 <?php if (!$islogged) { ?>
 <style>
+    /* display buttons inline*/
+    #d_social_login {
+        display: inline-table;
+    }
 <?php foreach($providers as $provider){ ?>
 #dsl_<?php echo $provider['id']; ?>_button{
   background:  <?php echo $provider['background_color']; ?>
@@ -115,7 +119,7 @@ $( document ).ready(function() {
   $('.dsl-button').on('click', function(){
     $('.dsl-button').find('.l-side').spin(false);
     $(this).find('.l-side').spin('<?php echo $size; ?>', '#fff');
-    
+
     $('.dsl-button').find('.dsl-icon').removeClass('dsl-hide-icon');
     $(this).find('.dsl-icon').addClass('dsl-hide-icon');
   })

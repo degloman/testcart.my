@@ -141,6 +141,8 @@ class ControllerCommonHeader extends Controller {
 		$data['currency'] = $this->load->controller('common/currency');
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
+		//connect d_social_login in header
+		$data['d_social_login'] = $this->load->controller('module/d_social_login');
 
 		// For page specific css
 		if (isset($this->request->get['route'])) {
